@@ -5,7 +5,7 @@ export default class Api {
 
   table = "";
   axiosClient = null;
-  constructor(fields, table) {
+  constructor(table) {
     this.table = table;
     this.axiosClient = axiosClient;
   }
