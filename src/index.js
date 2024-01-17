@@ -9,7 +9,7 @@ import { PackagePage } from "./page";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <PackagePage />,
   },
   {
     path: "/package",
