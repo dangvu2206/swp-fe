@@ -66,6 +66,7 @@ const Footer = () => {
             container
             rowSpacing={1}
             columnSpacing={{ xs: 1, sm: 2, md: 10 }}
+            justifyContent={"space-between"}
           >
             <Grid item xs={2}>
               <Stack>
@@ -99,6 +100,18 @@ const Footer = () => {
                 >
                   Plan Your Visit
                 </h1>
+                <p style={{ color: "#9999", lineHeight: "25px" }}>
+                  Plays
+                  <br />
+                  Our Hours
+                  <br />
+                  Our Locations
+                  <br />
+                  Sign Waiver
+                  <br />
+                  The Big Bite
+                </p>
+                <br />
               </div>
             </Grid>
             <Grid item xs={2}>
@@ -112,6 +125,11 @@ const Footer = () => {
                 >
                   Promo & Gift Card
                 </h1>
+                <p style={{ color: "#9999", lineHeight: "25px" }}>
+                  Bundle Packages <br />
+                  Current Promotions <br />
+                  Gift Cards <br />
+                </p>
               </div>
             </Grid>
             <Grid item xs={2}>
@@ -125,6 +143,11 @@ const Footer = () => {
                 >
                   Parties
                 </h1>
+                <p style={{ color: "#9999", lineHeight: "25px" }}>
+                  Birthday Parties <br />
+                  Summer Camps <br />
+                  Corporate Events <br />
+                </p>
               </div>
             </Grid>
             <Grid item xs={2}>
@@ -138,6 +161,10 @@ const Footer = () => {
                 >
                   Contact Us
                 </h1>
+                <p style={{ color: "#9999", lineHeight: "25px" }}>
+                  Contact Us <br />
+                  FAQ's <br />
+                </p>
               </div>
             </Grid>
           </Grid>
