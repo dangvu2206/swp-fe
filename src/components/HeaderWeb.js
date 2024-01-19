@@ -12,7 +12,13 @@ const HeaderWeb = () => {
     setAnchorElNav(event.currentTarget);
   };
   return (
-    <div style={{ height: 155, background: "#000" }}>
+    <div
+      style={{
+        height: 155,
+        background: "#000",
+        borderBottom: "1px solid #292929",
+      }}
+    >
       <Stack
         direction="row"
         justifyContent={"space-between"}

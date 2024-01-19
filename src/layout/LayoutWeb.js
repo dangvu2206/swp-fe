@@ -3,7 +3,11 @@ import { Footer, HeaderWeb } from "../components";
 
 const LayoutWeb = ({ children }) => {
   return (
-    <div>
+    <div
+      style={{
+        background: "black",
+      }}
+    >
       <HeaderWeb />
       {children}
       <Footer />
