@@ -104,69 +104,71 @@ const PackagePage = () => {
         </Container>
       </Box>
       {/* Contact */}
-      <Box
-        sx={{
-          border: "10px solid #240044 ",
-          marginTop: "40px",
-          marginBottom: "40px",
-          padding: 5,
-        }}
-      >
-        <div
-          className="header_cart"
-          style={{ background: "#ff5100", color: "#fff" }}
-        >
-          <Typography
-            gutterBottom
-            variant="h2"
-            component="div"
-            sx={{
-              textAlign: "center",
-              textTransform: "uppercase",
-              fontWeight: "bold",
-            }}
-          >
-            BOOK YOUR PACKAGE
-          </Typography>
-        </div>
-        <h3 style={{ color: "#fff", textAlign: "center", marginBottom: 20 }}>
-          To book your child’s birthday party and make the event special, please
-          click the link above.
-        </h3>
-        <h4
-          style={{
-            color: "#fff",
-            textAlign: "center",
-            marginBottom: 20,
-            fontWeight: "bold",
+      <Container maxWidth="lg">
+        <Box
+          sx={{
+            border: "10px solid #240044 ",
+            marginTop: "40px",
+            marginBottom: "40px",
+            padding: 5,
           }}
         >
-          To speak to our group coordinator, please contact via email or call:
-        </h4>
-        <Stack direction={"row"} justifyContent={"center"}>
-          <Button
-            variant="contained"
-            sx={{
-              fontSize: 28,
-              background: "red",
+          <div
+            className="header_cart"
+            style={{ background: "#ff5100", color: "#fff" }}
+          >
+            <Typography
+              gutterBottom
+              variant="h2"
+              component="div"
+              sx={{
+                textAlign: "center",
+                textTransform: "uppercase",
+                fontWeight: "bold",
+              }}
+            >
+              BOOK YOUR PACKAGE
+            </Typography>
+          </div>
+          <h3 style={{ color: "#fff", textAlign: "center", marginBottom: 20 }}>
+            To book your child’s birthday party and make the event special,
+            please click the link above.
+          </h3>
+          <h4
+            style={{
+              color: "#fff",
+              textAlign: "center",
+              marginBottom: 20,
               fontWeight: "bold",
             }}
           >
-            example@gmail.com
-          </Button>
-          <Button
-            variant="contained"
-            sx={{
-              marginLeft: 2,
-              fontSize: 28,
-              background: "red",
-              fontWeight: "bold",
-            }}
-          >
-            091-xxx-xxx
-          </Button>
-        </Stack>
-      </Box>
+            To speak to our group coordinator, please contact via email or call:
+          </h4>
+          <Stack direction={"row"} justifyContent={"center"}>
+            <Button
+              variant="contained"
+              sx={{
+                fontSize: 28,
+                background: "red",
+                fontWeight: "bold",
+              }}
+            >
+              example@gmail.com
+            </Button>
+            <Button
+              variant="contained"
+              sx={{
+                marginLeft: 2,
+                fontSize: 28,
+                background: "red",
+                fontWeight: "bold",
+              }}
+            >
+              091-xxx-xxx
+            </Button>
+          </Stack>
+        </Box>
+      </Container>
     </LayoutWeb>
   );
 };
