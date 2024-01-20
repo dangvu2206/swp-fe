@@ -1,2 +1,3 @@
 import LayoutWeb from "./LayoutWeb";
-export { LayoutWeb };
+import LayoutEvent from "./LayoutEvent";
+export { LayoutWeb, LayoutEvent };

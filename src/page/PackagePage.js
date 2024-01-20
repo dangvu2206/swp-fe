@@ -13,8 +13,12 @@ import {
 } from "@mui/material";
 import "./../style/style.css";
 import { discountImg, bgFullbox, pizzaImg } from "../asset";
+import { useNavigate } from "react-router-dom";
+import { ROUTER } from "../util";
 
 const PackagePage = () => {
+  // init state
+  const navigate = useNavigate();
   const [PackageList, setPackageList] = useState(
     Array.from({ length: 4 }, (value, index) => index + 1)
   );
@@ -22,6 +26,10 @@ const PackagePage = () => {
   const [stepList, setStepList] = useState(
     Array.from({ length: 4 }, (value, index) => index + 1)
   );
+  // hanle click funtion
+
+  const handleClickBook = () => navigate(ROUTER.EVENT);
+
   return (
     <LayoutWeb>
       {/* step to booking package */}
@@ -56,7 +64,7 @@ const PackagePage = () => {
         <Container maxWidth="lg">
           <Grid container spacing={2} columns={16}>
             {PackageList?.map((item, index) => (
-              <CardPackage key={index} />
+              <CardPackage key={index} handleClickBook={handleClickBook} />
             ))}
           </Grid>
         </Container>
@@ -192,7 +200,12 @@ const HeaderTextPackage = ({ text }) => {
   );
 };
 
-const CardPackage = ({ itemm, column = 4, PackageCardDefault = true }) => {
+const CardPackage = ({
+  itemm,
+  column = 4,
+  PackageCardDefault = true,
+  handleClickBook,
+}) => {
   return (
     <Grid item xs={column}>
       <Card sx={{ maxWidth: "100%", background: "black", color: "white" }}>
@@ -260,6 +273,7 @@ const CardPackage = ({ itemm, column = 4, PackageCardDefault = true }) => {
                     background: "red",
                     height: 57,
                   }}
+                  onClick={handleClickBook}
                 >
                   Book now
                 </Button>
