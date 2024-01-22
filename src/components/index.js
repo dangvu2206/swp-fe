@@ -4,6 +4,9 @@ import Footer from "./Footer";
 import SelectPackage from "./event/SelectPackage";
 import SelectDate from "./event/SelectDate";
 import CustomPackage from "./event/CustomPackage";
+import ModalBuyService from "./ModalBuyService";
+import InfomationForm from "./event/InfomationForm";
+import Order from "./event/Order";
 
 export {
   HeaderWeb,
@@ -12,4 +15,7 @@ export {
   SelectPackage,
   SelectDate,
   CustomPackage,
+  ModalBuyService,
+  InfomationForm,
+  Order,
 };

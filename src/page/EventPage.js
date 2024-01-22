@@ -7,9 +7,21 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Container } from "@mui/material";
 import { LayoutEvent } from "../layout";
-import { CustomPackage, SelectDate, SelectPackage } from "../components";
+import {
+  CustomPackage,
+  InfomationForm,
+  Order,
+  SelectDate,
+  SelectPackage,
+} from "../components";
 
-const steps = ["Select package", "Pick a Date", "Custom package"];
+const steps = [
+  "Select package",
+  "Pick a Date",
+  "Custom package",
+  "Infomation",
+  "Order",
+];
 
 export default function EventPage() {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -65,6 +77,10 @@ export default function EventPage() {
         return <SelectDate />;
       case 2:
         return <CustomPackage />;
+      case 3:
+        return <InfomationForm />;
+      case 4:
+        return <Order />;
       default:
         return <p> Step {step + 1}</p>;
     }

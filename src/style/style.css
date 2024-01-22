@@ -34,3 +34,10 @@ p.price {
   margin: 0px;
   color: #fff !important;
 }
+/* 
+body {
+  background-color: gray;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+} */
