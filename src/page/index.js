@@ -1,4 +1,18 @@
 import PackagePage from "./PackagePage";
 import EventPage from "./EventPage";
+import { lazy } from "react";
 
-export { PackagePage, EventPage };
+const BlogPage = lazy(() => import("./blog"));
+const UserPage = lazy(() => import("./user"));
+const LoginPage = lazy(() => import("./login"));
+const ProductsPage = lazy(() => import("./products"));
+const Page404 = lazy(() => import("./page-not-found"));
+export {
+  PackagePage,
+  EventPage,
+  UserPage,
+  BlogPage,
+  LoginPage,
+  ProductsPage,
+  Page404,
+};

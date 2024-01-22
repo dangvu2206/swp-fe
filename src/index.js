@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { PackagePage, EventPage } from "./page";
+import { PackagePage, EventPage, UserPage, ProductsPage } from "./page";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +19,22 @@ const router = createBrowserRouter([
     path: "/event",
     element: <EventPage />,
   },
+  {
+    path: "/user",
+    element: <UserPage />,
+  },
+  {
+    path: "/products",
+    element: <ProductsPage />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Suspense>
+      <RouterProvider router={router} />
+    </Suspense>
   </React.StrictMode>
 );
 
